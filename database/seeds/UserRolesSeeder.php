@@ -12,13 +12,13 @@ class UserRolesSeeder extends Seeder
     public function run()
     {
       DB::table('roles')->insert([
-              'beschrijving' => 'patient'
+          'beschrijving' => 'patient'
       ]);
       DB::table('roles')->insert([
-              'beschrijving' => 'dokter'
+          'beschrijving' => 'dokter'
       ]);
       DB::table('roles')->insert([
-              'beschrijving' => 'admin'
+          'beschrijving' => 'admin'
       ]);
     }
 }
