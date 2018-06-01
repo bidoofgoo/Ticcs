@@ -10,6 +10,7 @@
     <link href="{{ asset('public/css/rickstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/ticchome.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/ticc.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/css/vragen.css') }}" rel="stylesheet">
 
   </head>
   <body>
@@ -19,9 +20,7 @@
     </header>
     <main class="flex flexcenter flexmiddle fillings">
       <div class="boop">
-        <h1 class="title">🕷🕷 Heb ik lyme? 🕷🕷</h1>
-        <p class="padb-2">Doe de test nu!</p>
-        <p style="border: white 3px solid;">ga naar test<p>
+        <h1 class="title">Welkom bij de vragenlijst</h1>
       </div>
     </main>
   </body>
