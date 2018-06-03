@@ -21,7 +21,7 @@
       <div class="boop">
         <h1 class="title">Heb ik lyme?</h1>
         <p class="padb-2">Doe de test nu!</p>
-        <p style="border: white 3px solid;">ga naar test<p>
+        <!-- <p style="border: white 3px solid;">ga naar test<p> -->
       </div>
     </main>
     <footer class="flex flexmiddle"><a class="button" href="#" style="font-size: 3.5rem;">V</a></footer>
