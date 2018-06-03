@@ -15,7 +15,21 @@
   <body>
     <div class="background" style="background: radial-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.75)), url('{{ asset('public/img/grayboi.png')}}');"></div>
     <header class="flex flexright padlr-2">
-      <a href="#">Login</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p><a href="#">Register</a>
+      @guest
+        <a href="{{url('login')}}">Login</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p><a href="{{url('register')}}">Register</a>
+      @else
+        <a href="#">{{ Auth::user()->name }}</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p><a href="{{ route('logout') }}"
+          onclick="
+          event.preventDefault();
+          document.getElementById('logout-form').submit();
+          ">
+          Logout
+        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+      @endguest
     </header>
     <main class="flex flexcenter flexmiddle fillings">
       <div class="boop">
