@@ -24,6 +24,6 @@
         <!-- <p style="border: white 3px solid;">ga naar test<p> -->
       </div>
     </main>
-    <footer class="flex flexmiddle"><a class="button" href="#" style="font-size: 3.5rem;">V</a></footer>
+    <footer class="flex flexmiddle"><a class="button" href="{{url('vragenlijst')}}" style="font-size: 3.5rem;">V</a></footer>
   </body>
 </html>
