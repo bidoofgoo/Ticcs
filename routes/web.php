@@ -17,5 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('vragenlijst', 'Homecontroller@naarVragenlijst');
+Route::get('vragenlijst/1', 'VragenlijstController@naarVragenlijst');
+Route::post('vragenlijst/1', 'VragenlijstController@naarVragenlijst');
+Route::post('vragenlijst/2', 'VragenlijstController@naarVragenlijst');
+Route::post('vragenlijst/3', 'VragenlijstController@naarVragenlijst');
+Route::post('vragenlijst/4', 'VragenlijstController@naarVragenlijst');
