@@ -1,0 +1,107 @@
+* {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+h2{
+  height: 15%;
+}
+body{
+  background-color: #212121 !important;
+}
+#row1 {
+  height: 100vh;
+}
+
+#colLeft {
+  background-color: #444444;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+}
+
+#colRight {
+  background-color: #666b73;
+  height: auto;
+}
+
+#rightrow1 {
+  height: 50vh;
+}
+
+#rightrow2 {
+  height: 50vh;
+}
+
+#rightrow1Col1 {
+  background-image: url('https://cdn0.iconfinder.com/data/icons/body-pain-and-aches/231/body-pain-man-aaa011-512.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: #DAA348;
+  text-align: center;
+  color: white;
+  border: .5px solid #212121;
+  transition: 1s;
+}
+
+#rightrow1Col2 {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/medical-5/450/joint-512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: #DAA348;
+  text-align: center;
+  color: white;
+  border: .5px solid #212121;
+  transition: 1s;
+}
+
+#rightrow2Col1 {
+  background-image: url('https://www.freeiconspng.com/uploads/eyeball-icon-png-eye-icon-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: #DAA348;
+  text-align: center;
+  color: white;
+  border: .5px solid #212121;
+  transition: 1s;
+}
+
+#rightrow2Col2 {
+  background-image: url('https://image.flaticon.com/icons/svg/63/63796.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: #DAA348;
+  text-align: center;
+  color: white;
+  border: .5px solid #212121;
+  transition: 1s;
+}
+
+#rightrow1Col1 h2 {
+  margin-top: 50%;
+}
+
+#rightrow1Col2 h2 {
+  margin-top: 50%;
+}
+
+#rightrow2Col1 h2 {
+  margin-top: 50%;
+}
+
+#rightrow2Col2 h2 {
+  margin-top: 50%;
+}
+
+#rightrow1Col1:hover, #rightrow2Col1:hover, #rightrow1Col2:hover, #rightrow2Col2:hover {
+  background-color: #C6551C;
+}
+
+#rightrow1Col1:checked, #rightrow2Col1:checked, #rightrow1Col2:checked, #rightrow2Col2:checked {
+  background-color: #C6551C;
+}

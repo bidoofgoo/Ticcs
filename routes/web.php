@@ -22,3 +22,5 @@ Route::post('vragenlijst/1', 'VragenlijstController@naarVragenlijst');
 Route::post('vragenlijst/2', 'VragenlijstController@naarVragenlijst');
 Route::post('vragenlijst/3', 'VragenlijstController@naarVragenlijst');
 Route::post('vragenlijst/4', 'VragenlijstController@naarVragenlijst');
+
+Route::get('vragenlijst', 'VragenlijstController@Vragen');

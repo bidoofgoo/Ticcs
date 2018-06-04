@@ -9,4 +9,8 @@ class VragenlijstController extends Controller
   public function naarVragenLijst(){
     return view('vragenlijst.vraag');
   }
+
+  public function Vragen(){
+    return view('vragenlijst');
+  }
 }
