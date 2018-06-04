@@ -10,10 +10,7 @@
   <div class="boop">
     <h1 class="title">Heb ik lyme?</h1>
     <p class="padb-2">Doe de test nu!</p>
-<<<<<<< HEAD
-    <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem;">V</a>
-=======
->>>>>>> d133f837cbda11eb2eb6e35a01a4515e4a3c20d0
+    <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem; padding: 1rem;">🡳</a>
   </div>
 </main>
 @endsection
