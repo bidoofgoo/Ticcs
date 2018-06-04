@@ -16,7 +16,10 @@
     @yield('background')
     <header class="flex flexright padlr-2">
       @guest
-        <a href="{{url('login')}}">Login</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p><a href="{{url('register')}}">Registreer</a>
+        <a href="{{url('')}}">Home</a>
+        <!-- <p>&nbsp;&nbsp;/&nbsp;&nbsp;</p>
+        <a href="{{url('login')}}">Login</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p>
+        <a href="{{url('register')}}">Registreer</a> -->
       @else
         <a href="#">{{ Auth::user()->name }}</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p><a href="{{ route('logout') }}"
           onclick="
