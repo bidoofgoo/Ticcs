@@ -15,4 +15,8 @@ class VragenlijstController extends Controller
       return view('vragenlijst.vraag', ['id' => $id,'vraag' => $vraag]);
     }
   }
+
+  public function Vragen(){
+    return view('vragenlijst');
+  }
 }
