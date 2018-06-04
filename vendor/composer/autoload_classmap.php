@@ -3244,6 +3244,7 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
     'UserRolesSeeder' => $baseDir . '/database/seeds/UserRolesSeeder.php',
+    'VragenSeeder' => $baseDir . '/database/seeds/VragenSeeder.php',
     'Webmozart\\Assert\\Assert' => $vendorDir . '/webmozart/assert/src/Assert.php',
     'Webpatser\\Uuid\\Uuid' => $vendorDir . '/webpatser/laravel-uuid/src/Webpatser/Uuid/Uuid.php',
     'Webpatser\\Uuid\\UuidServiceProvider' => $vendorDir . '/webpatser/laravel-uuid/src/Webpatser/Uuid/UuidServiceProvider.php',

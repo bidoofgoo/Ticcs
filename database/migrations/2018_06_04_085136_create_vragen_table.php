@@ -14,7 +14,7 @@ class CreateVragenTable extends Migration
     public function up()
     {
         Schema::create('vragen', function (Blueprint $table) {
-            $table->increments('id');
+            $table->integer('id')->primary();
             $table->string('vraag');
             $table->string('info_link');
             $table->string('afbeelding_link');
