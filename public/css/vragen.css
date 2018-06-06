@@ -11,6 +11,10 @@ body{
 #row1 {
   height: 100vh;
 }
+/* 
+.col-md-4:hover{
+  background-color: #DAA348;
+} */
 
 #colLeft {
   background-color: #444444;
