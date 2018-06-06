@@ -52,7 +52,7 @@
                       <h2>Gewrichtspijn?</h2>
                     </div>
                     <div class="col-md-4" id="rightrow1Col2">
-                      <h2>Gewrichtspijn?</h2>
+                      <h2>Botbreuk?</h2>
                     </div>
 
                   </div>
@@ -66,7 +66,7 @@
                       <h2>Hartkloppingen?</h2>
                   </div>
                   <div class="col-md-4" id="rightrow1Col2">
-                    <h2>Gewrichtspijn?</h2>
+                    <h2>Uitslag?</h2>
                   </div>
                 </div>
               </div>
@@ -78,27 +78,27 @@
                 <div class="row" id="rightrow1">
 
                       <div class="col-md-4" onclick="document.col-md-6.style.backgroundColor = 'green';" id="rightrow1Col1">
-                        <h2>----</h2>
+                        <h2>Moeheid?</h2>
                       </div>
                       <div class="col-md-4" id="rightrow1Col2">
-                        <h2>---</h2>
+                        <h2>Diarree?</h2>
                       </div>
                       <div class="col-md-4" id="rightrow1Col2">
-                        <h2>-----</h2>
+                        <h2>Misselijkheid?</h2>
                       </div>
 
                     </div>
 
                   <div class="row" id="rightrow2">
                     <div class="col-md-4" id="rightrow2Col1">
-                        <h2>------</h2>
+                        <h2>Rare bulten?</h2>
                     </div>
 
                     <div class="col-md-4" id="rightrow2Col2">
-                        <h2>----</h2>
+                        <h2>Blauwe Plekken?</h2>
                     </div>
                     <div class="col-md-4" id="rightrow1Col2">
-                      <h2>--------</h2>
+                      <h2>Slaap tekort?</h2>
                     </div>
                   </div>
                 </div>
