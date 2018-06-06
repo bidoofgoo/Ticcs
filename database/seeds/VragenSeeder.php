@@ -28,7 +28,7 @@ class VragenSeeder extends Seeder
           'id' => 3,
           'vraag' => 'Heeft u al eerder last gehad van lyme?',
           'info_link' => 'https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/25/1498065944-black-legged-tick.jpg',
-          'afbeelding_link' => 'https://i.imgur.com/ycrW4Pv.jpg'
+          'afbeelding_link' => 'http://www.setyo.nl/wp-content/uploads/2015/08/42178401_l.jpg'
         ]);
     }
 
