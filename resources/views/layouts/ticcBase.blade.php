@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ticcs</title>
+    <link rel="shortcut icon" href="{{ asset('public/img/fav.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Kreon:300,400|Open+Sans" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -16,7 +17,7 @@
     @yield('background')
     <header class="flex flexright padlr-2">
       @guest
-        <a href="{{url('')}}">Home</a>
+        <a class="ignoreScale" href="{{url('')}}">Home</a>
         <!-- <p>&nbsp;&nbsp;/&nbsp;&nbsp;</p>
         <a href="{{url('login')}}">Login</a><p>&nbsp;&nbsp;/&nbsp;&nbsp;</p>
         <a href="{{url('register')}}">Registreer</a> -->
