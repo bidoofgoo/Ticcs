@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ticcs</title>
+    <link rel="shortcut icon" href="{{ asset('public/img/fav.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Kreon:300,400|Open+Sans" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">

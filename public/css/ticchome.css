@@ -15,7 +15,7 @@
 }
 
 .vraagimage{
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   border-radius: 2px;
 }
 
@@ -28,6 +28,7 @@
 .button{
   padding: 0.3rem 1.5rem 0.3rem 1.5rem;
   border-radius: 2px;
+  position: relative;
   /* border: 4px solid white; */
   /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: #0c0c0c;
@@ -35,15 +36,17 @@
   margin-left: auto;
   margin-right: auto;
   width: 9rem;
+  top: 0;
   transition: 0.3s;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 
 .button:hover{
   background-color: rgba(0, 0, 0, 1);
   /* border-color: #DAA348; */
+  top: -3px;
   width: 9.1rem;
-  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.5);
 }
 
 a{
