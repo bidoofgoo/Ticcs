@@ -47,7 +47,8 @@
         <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de klaar knop. </h3>
       </div>
 
-        <a class="klaarknop"href="#">Klaar</a>
+      <a class="klaarknop" href="{{url('einde')}}">Klaar</a>
+
     <div class="row" id="row1" style="margin-top: 10vh;">
 
             <div class="col-lg-9" id="colRight">
