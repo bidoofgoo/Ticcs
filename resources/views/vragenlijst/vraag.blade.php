@@ -10,9 +10,11 @@
   <div class="boop">
     <h1 class="padb-2">{{ $vraag->vraag}}</h1>
     <img class="marb-2 vraagimage" height="300" src="{{ $vraag->afbeelding_link}}">
-    <a class="button marb-2" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Ja</a>
-    <a class="button marb-2" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Nee</a>
-    <a class="button" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Weet ik niet</a>
+    <div class="poop">
+      <a class="button marb-2" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Ja</a>
+      <a class="button marb-2" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Weet ik niet</a>
+      <a class="button marb-2" href="{{url('vragenlijst/' . ($id + 1))}}" style="font-size: 1.5rem;">Nee</a>
+    </div>
   </div>
 </main>
 @endsection

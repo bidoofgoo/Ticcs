@@ -9,7 +9,7 @@
 <main class="flex flexcenter flexmiddle fillings">
   <div class="boop">
     <h1 class="title">Heb ik lyme?</h1>
-    <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem; padding: 1rem;">🡳 Doe de test nu! 🡳</a>
+    <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem; padding: 1rem; width: 20rem;"> Doe de test nu! </a>
   </div>
 </main>
 @endsection

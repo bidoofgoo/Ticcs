@@ -39,8 +39,15 @@
     </script>
   </head>
   <body>
+    <div class="background"
+      style="background: radial-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.75)), url('{{ asset('public/img/grayboi.png')}}');"></div>
 
-    <div class="row" id="row1">
+      <div class="popup">
+        <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de klaar knop. </h3>
+      </div>
+
+        <a class="klaarknop"href="#">Klaar</a>
+    <div class="row" id="row1" style="margin-top: 10vh;">
 
             <div class="col-lg-9" id="colRight">
               <div class="row" id="rightrow1">
