@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Vragenlijst;
+use DB;
 
 class VragenlijstController extends Controller
 {
@@ -17,7 +18,8 @@ class VragenlijstController extends Controller
   }
 
   public function Vragen(){
-    return view('vragenlijst');
+    $vragen = DB::table('vragen')->where('id', '>', 3)->get();
+    return view('vragenlijst.vragenlijst', ['vragen'=> $vragen]);
   }
 
   public function einde(){
