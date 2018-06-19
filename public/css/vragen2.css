@@ -89,7 +89,7 @@ h3{
 }
 
 #colRight {
-  background-color: #666b73;
+  background-color: rgba(0,0,0,0.5);
   height: auto;
 }
 
@@ -110,6 +110,15 @@ h3{
 
 .vraag h2 {
   margin-top: 20%;
+}
+
+.vraag a{
+   color: white;
+}
+
+.vraag a:hover{
+   color: gray;
+   text-decoration: none;
 }
 
 .vraag:hover, .vraag:checked {

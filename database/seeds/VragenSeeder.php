@@ -44,6 +44,21 @@ class VragenSeeder extends Seeder
       $this->makeVraag('Pijnlijke keel',
       'https://mens-en-gezondheid.infonu.nl/aandoeningen/186442-keelpijn-oorzaken-van-pijn-aan-keel-pijnlijke-keel.html',
       'keel.png');
+      $this->makeVraag('Hoesten',
+      'https://www.thuisarts.nl/hoesten',
+      'hoest.png');
+      $this->makeVraag('Hartkloppingen',
+      'https://www.thuisarts.nl/hoesten',
+      'hart.png');
+      $this->makeVraag('Overgevoeligheid voor licht',
+      'https://nl.wikipedia.org/wiki/Lichtovergevoeligheid',
+      'oog.png');
+      $this->makeVraag('Oorsuizen, zoemen of fluiten',
+      'https://www.thuisarts.nl/oorsuizen/ik-heb-last-van-oorsuizen',
+      'oor.png');
+      $this->makeVraag('Somberheid of angstigheid',
+      'https://www.testjeleefstijl.nl/angst-somberheid',
+      'somber.png');
    }
 
    public function insertIntoDB($data){

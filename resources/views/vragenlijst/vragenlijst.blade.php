@@ -59,7 +59,7 @@
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
                <h2>{{$vraag->vraag}} <a target="_blank" href="{{$vraag->info_link}}" style="vertical-align:top;">?</a></h2>
             </div>
-            @if($vraagno % 3 == 3 - 1 && $vraagno != 0)
+            @if($vraagno % 3 == 3 - 1 && $vraagno != 0 && !$loop->last )
          </div>
          <div class="row halfvh">
             @endif
