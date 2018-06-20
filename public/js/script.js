@@ -1,5 +1,10 @@
 window.onload = function() {
 
+   setcolors();
+   // clickfunctions();
+}
+
+function setcolors(){
    var vak = document.getElementsByClassName("vraag");
    // element.style.property = new style
    var kleuren = ["#ffcc7f", "#ffc166", "#ffb74c", "#ffbc59"];
@@ -11,8 +16,9 @@ window.onload = function() {
       vak[i].style.backgroundColor = kleuren[random];
       console.log(vak[i]);
    }
+}
 
-
+function clickfunctions(){
    console.log("JavaScript loaded");
    // p stands for the the panel en c for the color
    var array = document.getElementsByClassName("vraag");
