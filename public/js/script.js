@@ -3,22 +3,33 @@ window.onload = function() {
   // p stands for the the panel en c for the color
   var panel1 = document.getElementById("rightrow1Col1");
   var panel2 = document.getElementById("rightrow1Col2");
+  var panel2 = document.getElementById("rightrow1Col3");
   var panel3 = document.getElementById("rightrow2Col1");
-  var panel4 = document.getElementById("rightrow2Col2");
+  var panel5 = document.getElementById("rightrow2Col2");
+  var panel6 = document.getElementById("rightrow2Col3");
 
+  var panel7 = document.getElementById("rightrow3Col1");
+  var panel8 = document.getElementById("rightrow3Col2");
+  var panel9 = document.getElementById("rightrow3Col3");
+
+  var panel10 = document.getElementById("rightrow4Col1");
+  var panel11 = document.getElementById("rightrow4Col2");
+  var panel12 = document.getElementById("rightrow4Col3");
+
+  // colors
   var color1 = "white";
   var color2 = "red";
   var color3 = "green";
   var color4 = "blue";
 
-  var var1 = false;
-  var var2 = false;
-  var var3 = false;
-  var var4 = false;
-  var var5 = false;
-  var var6 = false;
+  // variables for panels
+
+  for (i = 1; i = 12; i++) {
+    var "var"+i = false;
+  }
 
   // iniating functions, if you wanna add more its easy to do here
+  /*
   panel1.onclick = function(){
     changeVar(var1, panel1);
   };
@@ -30,7 +41,13 @@ window.onload = function() {
   };
   panel4.onclick = function(){
     changeVar(var4, panel4);
-  };
+  };*/
+  for(i = 1; i = 12; i++) {
+    var v = "panel" + i;
+    v.onclick = function() {
+      changeVar("var"+i, v);
+    }
+  }
   // reuseable funtions
   // must give a panel and color with the function $panel for which panel you want, $color for which color.
   function changeColor(panel, color) {
@@ -53,7 +70,8 @@ window.onload = function() {
 
   // get x
   function getElement(x) {
-    var x = document.getElementById(x);
+    var x = document.getElementById(x)
+    return x;
   }
   console.log("scrip ended succesfully");
 }

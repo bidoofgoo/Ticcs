@@ -12,6 +12,7 @@
     <link href="{{ asset('public/css/ticchome.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/ticc.css') }}" rel="stylesheet">
     <link href="{{ asset('public/css/vragen.css') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ URL::asset('js/script.js') }}"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="text/javascript" src="color.js"></script>
@@ -60,7 +61,7 @@
                     <div class="col-md-4" id="rightrow1Col2">
                       <h2>Gewrichtspijn?</h2>
                     </div>
-                    <div class="col-md-4" id="rightrow1Col2">
+                    <div class="col-md-4" id="rightrow1Col3">
                       <h2>Botbreuk?</h2>
                     </div>
 
@@ -74,7 +75,7 @@
                   <div class="col-md-4" id="rightrow2Col2">
                       <h2>Hartkloppingen?</h2>
                   </div>
-                  <div class="col-md-4" id="rightrow1Col2">
+                  <div class="col-md-4" id="rightrow2Col3">
                     <h2>Uitslag?</h2>
                   </div>
                 </div>
@@ -86,27 +87,27 @@
               <div class="col-lg-9" id="colRight">
                 <div class="row" id="rightrow1">
 
-                      <div class="col-md-4" onclick="document.col-md-6.style.backgroundColor = 'green';" id="rightrow1Col1">
+                      <div class="col-md-4" onclick="document.col-md-6.style.backgroundColor = 'green';" id="rightrow3Col1">
                         <h2>Moeheid?</h2>
                       </div>
-                      <div class="col-md-4" id="rightrow1Col2">
+                      <div class="col-md-4" id="rightrow3Col2">
                         <h2>Diarree?</h2>
                       </div>
-                      <div class="col-md-4" id="rightrow1Col2">
+                      <div class="col-md-4" id="rightrow3Col3">
                         <h2>Misselijkheid?</h2>
                       </div>
 
                     </div>
 
                   <div class="row" id="rightrow2">
-                    <div class="col-md-4" id="rightrow2Col1">
+                    <div class="col-md-4" id="rightrow4Col1">
                         <h2>Rare bulten?</h2>
                     </div>
 
-                    <div class="col-md-4" id="rightrow2Col2">
+                    <div class="col-md-4" id="rightrow4Col2">
                         <h2>Blauwe Plekken?</h2>
                     </div>
-                    <div class="col-md-4" id="rightrow1Col2">
+                    <div class="col-md-4" id="rightrow4Col3">
                       <h2>Slaap tekort?</h2>
                     </div>
                   </div>
