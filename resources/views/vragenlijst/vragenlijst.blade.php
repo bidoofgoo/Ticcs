@@ -57,7 +57,8 @@
             @foreach($vragen as $vraag)
             <div class="col-md-4 vraag"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
-               <h2>{{$vraag->vraag}} <a target="_blank" href="{{$vraag->info_link}}" style="vertical-align:top;">?</a></h2>
+               <h2>{{$vraag->vraag}} <a target="_blank" class="information" 
+                  href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
             </div>
             @if($vraagno % 3 == 3 - 1 && $vraagno != 0 && !$loop->last )
          </div>
