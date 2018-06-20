@@ -22,3 +22,7 @@ Route::get('vragenlijst/{id}', 'VragenlijstController@naarVragenlijst');
 
 Route::get('vragenlijst', 'VragenlijstController@Vragen');
 Route::get('einde', 'VragenlijstController@einde');
+
+Route::get('oudelijst', function () {
+    return view('vragenlijst');
+});

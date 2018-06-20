@@ -113,5 +113,8 @@
                   </div>
                 </div>
               </div>
+              <footer class="row" style="height: 2.5rem;">
+
+              </footer>
   </body>
 </html>

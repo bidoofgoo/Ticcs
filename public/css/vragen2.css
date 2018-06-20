@@ -1,0 +1,126 @@
+* {
+  margin: 0 auto;
+}
+h2{
+  height: 15%;
+}
+body{
+  background-color: #212121 !important;
+  background-image: url('{{ asset('public/img/grayboi.png')}}')  !important;
+  overflow-x: hidden;
+}
+
+.popup{
+  z-index: 999;
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
+  text-align: center;
+}
+h3{
+  font-size: 1rem !important;
+  font-style: italic;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+.klaarknop{
+  position: fixed;
+  z-index: 999;
+  bottom: 5%;
+  right: 3%;
+  width: 5rem;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  text-align: center;
+  background-color: #4CAF50;
+  box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.5);
+
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  transition: 0.3s
+}
+.klaarknop:hover{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #43A047;
+  bottom: calc(5% + 3px);
+
+  box-shadow: 1px 7px 7px 0px rgba(0,0,0,0.5);
+}
+
+#row1 {
+  height: 100vh;
+}
+
+.col-md-4{
+  transition: 0.3s;
+  position: relative;
+  bottom: 0;
+}
+
+.col-md-4:hover{
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5);
+    z-index: 998;
+    bottom: 3px;
+    background-color: #F57C00 !important;
+}
+.col-md-4 h2{
+  position: relative;
+  bottom: 2rem;
+  text-align: center;
+  width: 90%;
+
+}
+
+#colLeft {
+  background-color: #444444;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+}
+
+#colRight {
+  background-color: rgba(0,0,0,0.5);
+  height: auto;
+}
+
+.halfvh{
+   height: 50vh;
+}
+
+.vraag {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-color: #DAA348;
+  text-align: center;
+  color: white;
+  border: .5px solid #212121;
+  transition: 0.3s;
+}
+
+.vraag h2 {
+  margin-top: 20%;
+}
+
+.vraag a{
+   color: white;
+}
+
+.vraag a:hover{
+   color: gray;
+   text-decoration: none;
+}
+
+.vraag:hover, .vraag:checked {
+  background-color: #C6551C;
+}
