@@ -15,18 +15,16 @@ body{
   background-color: #212121;
   position: absolute;
   top: 0;
-  left:0;
-  width: 100vw;
-  height: 10vh;
+  left: 0;
+  width: 100%;
   box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
   text-align: center;
 }
 h3{
   font-size: 1rem !important;
   font-style: italic;
-  position: absolute;
-  top: 30%;
-  left: 10%;
+  padding: 1rem;
+  margin: 0 !important;
 }
 .klaarknop{
   position: fixed;
@@ -94,10 +92,11 @@ h3{
 }
 
 .halfvh{
-   height: 50vh;
+   min-height: 50vh;
 }
 
 .vraag {
+   min-height: 200px !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
@@ -117,7 +116,6 @@ h3{
 }
 
 .vraag a:hover{
-   color: gray;
    text-decoration: none;
 }
 

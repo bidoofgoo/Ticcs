@@ -49,7 +49,7 @@
 
    <a class="klaarknop" href="{{url('einde')}}">Klaar</a>
 
-   <div class="row" style="margin-top: 10vh;">
+   <div class="row" style="margin-top: 3rem;">
 
       <div class="col-lg-9" id="colRight">
          <div class="row halfvh">
@@ -57,7 +57,7 @@
             @foreach($vragen as $vraag)
             <div class="col-md-4 vraag"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
-               <h2>{{$vraag->vraag}} <a target="_blank" class="information" 
+               <h2>{{$vraag->vraag}} <a target="_blank" class="information2"
                   href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
             </div>
             @if($vraagno % 3 == 3 - 1 && $vraagno != 0 && !$loop->last )
