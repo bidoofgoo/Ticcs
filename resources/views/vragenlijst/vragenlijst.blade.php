@@ -12,33 +12,15 @@
    <link href="{{ asset('public/css/ticchome.css') }}" rel="stylesheet">
    <link href="{{ asset('public/css/ticc.css') }}" rel="stylesheet">
    <link href="{{ asset('public/css/vragen2.css') }}" rel="stylesheet">
-   <script type="text/javascript" src="{{ URL::asset('js/script.js') }}"></script>
+   <script type="text/javascript" src="{{ asset('public/js/script.js') }}"></script>
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <script type="text/javascript" src="color.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
    <!-- Popper JS -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
    <!-- Latest compiled JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-   <script type="text/javascript">
-   window.onload = function() {
-
-      var vak = document.getElementsByClassName("col-md-4");
-      // element.style.property = new style
-      var kleuren = ["#ffcc7f", "#ffc166", "#ffb74c", "#ffbc59"];
-      var random;
-      console.log(vak.length);
-      for (i = 0; i < vak.length;i++ ) {
-         random = Math.floor(Math.random() * 3);
-         vak[i].style.backgroundColor = kleuren[random];
-         console.log(vak[i]);
-      }
-
-   }
-   </script>
 </head>
 <body>
    <div class="background"
@@ -56,7 +38,7 @@
          <div class="row halfvh">
             <?php $vraagno = 0; ?>
             @foreach($vragen as $vraag)
-            <div class="col-md-4 vraag"
+            <div class="col-md-4 vraag vraag{{$vraagno}}"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
                <h2>{{$vraag->vraag}} <a target="_blank" class="information2"
                   href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
