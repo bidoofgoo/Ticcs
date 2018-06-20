@@ -5,6 +5,7 @@ window.onload = function() {
    var kleuren = ["#ffcc7f", "#ffc166", "#ffb74c", "#ffbc59"];
    var random;
    console.log(vak.length);
+
    for (i = 0; i < vak.length;i++ ) {
       random = Math.floor(Math.random() * 3);
       vak[i].style.backgroundColor = kleuren[random];
@@ -18,6 +19,18 @@ window.onload = function() {
    console.log(array);
    var booleanarray = [];
 
+   function changeVar(index, panel) {
+      if (!boolean[index]) {
+         booleanarray[index] = true;
+         panel.style.backgroundColor = color1;
+         // you can change the value here so it returns true or false for you forms
+      }
+      else {
+         booleanarray[index] = false;
+         panel.style.backgroundColor = color2;
+         console.log("true");
+      }
+   }
    // colors
 
    var color1 = "red";
@@ -27,6 +40,7 @@ window.onload = function() {
    // variables for panels
    for (i = 0; i < array.length; i++) {
       booleanarray[i] = false;
+      console.console.log(booleanarray[i]);
    }
 
    // looping threw array
@@ -39,19 +53,7 @@ window.onload = function() {
    // reuseable funtions
    // must give a panel and color with the function $panel for which panel you want, $color for which color.
    // var for the personal boolean for the panel, and which panel;
-   function changeVar(boolIndex, panel) {
-      if (!booleanarray[boolIndex]) {
-         booleanarray[boolIndex] = true;
-         panel.style.backgroundColor = color1;
-         // you can change the value here so it returns true or false for you forms
-         console.log("false");
-      }
-      else {
-         booleanarray[boolIndex] = false;
-         panel.style.backgroundColor = color2;
-         console.log("true");
-      }
-   }
+
 
    // get x
    function getElement(x) {
