@@ -19,6 +19,7 @@ Auth::routes();
 
 
 Route::get('vragenlijst/{id}', 'VragenlijstController@naarVragenlijst');
+Route::post('vragenlijst/{id}', 'VragenlijstController@naarVragenlijstPost');
 
 Route::get('vragenlijst', 'VragenlijstController@Vragen');
 Route::get('einde', 'VragenlijstController@einde');

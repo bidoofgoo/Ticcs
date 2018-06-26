@@ -67,7 +67,7 @@ h3{
     box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5);
     z-index: 998;
     bottom: 3px;
-    background-color: #F57C00 !important;
+    /* background-color: #F57C00 !important; */
 }
 .col-md-4 h2{
   position: relative;
@@ -99,12 +99,12 @@ h3{
    min-height: 200px !important;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 175px !important;
   background-size: 50%;
-  background-color: #DAA348;
   text-align: center;
   color: white;
   border: .5px solid #212121;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 
 .vraag h2 {
@@ -119,6 +119,46 @@ h3{
    text-decoration: none;
 }
 
-.vraag:hover, .vraag:checked {
+/* .vraag:hover, .vraag:checked {
   background-color: #C6551C;
+} */
+
+.kleur1{
+   background-color: #B4A597;
+}
+
+.kleur2{
+   background-color: #A49485;
+}
+
+.kleur3{
+   background-color: #948271;
+}
+
+.kleur4{
+   background-color: #867362;
+}
+
+.kleur1:hover, .kleur2:hover, .kleur3:hover, .kleur4:hover{
+   background-color: #685A4D;
+}
+
+.clicked1{
+   background-color: #FFC166;
+}
+
+.clicked2{
+   background-color: #FFB211;
+}
+
+.clicked3{
+   background-color: #EFA947;
+}
+
+.clicked4{
+   background-color: #E69C49;
+}
+
+.clicked1:hover, .clicked2:hover, .clicked3:hover, .clicked4:hover{
+   background-color: #D68733;
 }

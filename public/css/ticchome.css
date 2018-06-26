@@ -58,6 +58,8 @@ a:hover{
   color: #DAA348;
 }
 
+form, form *{color:black;}
+
 @media screen and (max-width: 450px) {
 
 }

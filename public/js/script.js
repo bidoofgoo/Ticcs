@@ -1,7 +1,7 @@
 window.onload = function() {
 
    setcolors();
-   // clickfunctions();
+   clickfunctions();
 }
 
 function setcolors(){
@@ -10,10 +10,16 @@ function setcolors(){
    var kleuren = ["#ffcc7f", "#ffc166", "#ffb74c", "#ffbc59"];
    var random;
    console.log(vak.length);
+
+   previousRand = 10;
+   random = 10;
    for (i = 0; i < vak.length;i++ ) {
-      random = Math.floor(Math.random() * 3);
-      vak[i].style.backgroundColor = kleuren[random];
+      while(random == previousRand){
+         random = Math.floor(Math.random() * 4) + 1;
+      }
+      vak[i].className += " kleur" + random;
       console.log(vak[i]);
+      previousRand = random;
    }
 }
 
@@ -22,40 +28,41 @@ function clickfunctions(){
    // p stands for the the panel en c for the color
    var array = document.getElementsByClassName("vraag");
    console.log(array);
-   var booleanarray = [];
 
-   // colors
-
-   var color1 = "red";
-   var color2 = "green";
+   // // colors
+   //
+   // var color1 = "red";
+   // var color2 = "green";
 
 
    // variables for panels
-   for (i = 0; i < array.length; i++) {
-      booleanarray[i] = false;
-   }
+   // for (i = 0; i < array.length; i++) {
+   //    booleanarray[i] = false;
+   // }
 
    // looping threw array
    for(i = 0; i < array.length; i++) {
       array[i].onclick = function() {
-         console.log("clicking");
-         changeVar(i, this);
+         // console.log("clicking");
+         changeVar(this);
       }
    }
+
    // reuseable funtions
    // must give a panel and color with the function $panel for which panel you want, $color for which color.
    // var for the personal boolean for the panel, and which panel;
-   function changeVar(boolIndex, panel) {
-      if (!booleanarray[boolIndex]) {
-         booleanarray[boolIndex] = true;
-         panel.style.backgroundColor = color1;
+   function changeVar(panel) {
+      var form= document.getElementsByTagName('form')[0];
+      if (panel.className.includes('kleur')) {
+         panel.className = panel.className.replace('kleur', 'clicked');
          // you can change the value here so it returns true or false for you forms
-         console.log("false");
+         // console.log("false");
+         document.getElementById('formVraag' + panel.dataset.vraagno).value = "true";
       }
       else {
-         booleanarray[boolIndex] = false;
-         panel.style.backgroundColor = color2;
-         console.log("true");
+         panel.className = panel.className.replace('clicked', 'kleur');
+         // console.log("true");
+         document.getElementById('formVraag' + panel.dataset.vraagno).value = "false";
       }
    }
 

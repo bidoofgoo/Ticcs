@@ -38,7 +38,7 @@
          <div class="row halfvh">
             <?php $vraagno = 0; ?>
             @foreach($vragen as $vraag)
-            <div class="col-md-4 vraag vraag{{$vraagno}}"
+            <div class="col-md-4 vraag" data-vraagno="{{$vraagno + 4}}"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
                <h2>{{$vraag->vraag}} <a target="_blank" class="information2"
                   href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
@@ -55,5 +55,19 @@
    <footer class="row" style="height: 2.5rem;">
 
    </footer>
+   <form action="{{url('einde')}}" method="post">
+      @csrf
+      @foreach($alleVragen as $vraag)
+         @if( $data == null)
+            @if(!($loop->index >= 3))
+               <input id="formVraag{{$vraag->id}}" type="text" name="vraag{{ $vraag->id }}" value="null">
+            @else
+               <input id="formVraag{{$vraag->id}}" type="text" name="vraag{{ $vraag->id }}" value="false">
+            @endif
+         @else
+            <input id="formVraag{{$vraag->id}}" type="text" name="vraag{{ $vraag->id }}" value="{{$data->input('vraag' . $vraag->id )}}">
+         @endif
+      @endforeach
+   </form>
 </body>
 </html>
