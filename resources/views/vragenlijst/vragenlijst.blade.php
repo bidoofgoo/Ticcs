@@ -30,7 +30,9 @@
       <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de klaar knop. </h3>
    </div>
 
-   <a class="klaarknop" href="{{url('einde')}}">Klaar</a>
+   <a class="klaarknop" href="{{url('einde')}}" onclick="
+      event.preventDefault();
+      document.getElementsByTagName('form')[0].submit();">Klaar</a>
 
    <div class="row" style="margin-top: 3rem;">
 
@@ -55,7 +57,7 @@
    <footer class="row" style="height: 2.5rem;">
 
    </footer>
-   <form action="{{url('einde')}}" method="post">
+   <form style="display:none;" action="{{url('resultaat')}}" method="post">
       @csrf
       @foreach($alleVragen as $vraag)
          @if( $data == null)

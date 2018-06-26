@@ -44,6 +44,29 @@ class VragenlijstController extends Controller
       'alleVragen'=>$alleVragen, 'data' => $req]);
    }
 
+   public function ResultatenPost(Request $req){
+      $post = $req->all();
+
+      $alterUrl = '';
+      $i = 0;
+      foreach($post as $key => $data){
+         if ($i != 0) {
+            $alterUrl = $alterUrl . $key . '=' . $data;
+            if ($i != (count($post) - 1)) {
+               $alterUrl = $alterUrl . '&';
+            }
+         }
+         $i++;
+      }
+
+      return redirect(url('/resultaat?'.$alterUrl));
+   }
+
+   public function Resultaten(){
+      $alleVragen = Vragenlijst::all();
+      return view('vragenlijst.resultaat', ['alleVragen'=>$alleVragen]);
+   }
+
    public function einde(){
       return view('einde');
    }

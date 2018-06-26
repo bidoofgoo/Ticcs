@@ -30,7 +30,7 @@
     </div>
   </div>
 </main>
-<form action="{{url('vragenlijst/'. ($id + 1))}}" method="post">
+<form style="display:none;" action="{{url('vragenlijst/'. ($id + 1))}}" method="post">
    @csrf
    @foreach($alleVragen as $vraag)
       @if( $data == null)
