@@ -33,3 +33,32 @@ h1{
    color: black;
    border-color: black;
 }
+
+.⬛{
+   z-index: 1000;
+   background-color: rgba(0,0,0,0.4);
+   position: fixed;
+   padding-top: 15vh;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   display: none;
+   justify-content: center;
+}
+
+.🍆{
+   display: inline-block;
+   width: 70vw;
+   height: 70vh;
+   background-color: white;
+   margin: 0;
+}
+
+.❌{
+   position: relative;
+   bottom: 2rem;
+   left: 1rem;
+   font-size: 2rem;
+   cursor: pointer;
+}

@@ -26,13 +26,21 @@
    <div class="background"
    style="background: radial-gradient(rgba(0,0,0,0.35), rgba(0, 0, 0, 0.75)), url('{{ asset('public/img/grayboi.png')}}');"></div>
 
+   <div class="⬛" onclick="this.style.display = 'none';">
+      <iframe class="🍆" src=""></iframe>
+      <p class="❌">x</p>
+   </div>
+
    <div class="popup">
       <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de klaar knop. </h3>
    </div>
 
    <a class="klaarknop" href="{{url('einde')}}" onclick="
       event.preventDefault();
-      document.getElementsByTagName('form')[0].submit();">Klaar</a>
+      document.getElementsByTagName('form')[0].submit();
+      setTimeout(function(){
+         window.location.href = '{{url('einde')}}';
+      }, 300)">Zie resultaten</a>
 
    <div class="row" style="margin-top: 3rem;">
 
@@ -42,7 +50,11 @@
             @foreach($vragen as $vraag)
             <div class="col-md-4 vraag" data-vraagno="{{$vraagno + 4}}"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
-               <h2>{{$vraag->vraag}} <a target="_blank" class="information2"
+               <h2>{{$vraag->vraag}} <a class="information2"
+                  onclick="event.preventDefault();
+                           event.stopPropagation();
+                          document.getElementsByClassName('⬛')[0].style.display = 'flex';
+                          document.getElementsByClassName('🍆')[0].src = '{{$vraag->info_link}}';"
                   href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
             </div>
             @if($vraagno % 3 == 3 - 1 && $vraagno != 0 && !$loop->last )
@@ -54,10 +66,21 @@
          </div>
       </div>
    </div>
+   <div class="bottom" style="padding: 1rem; display:flex; justify-content:center;">
+      @for($i = 0; $i < 4; $i++)
+         <h2 style="margin: 0.5rem;">
+            @if($i == (3))
+               ⬤
+            @else
+               🞇
+            @endif
+         </h2>
+      @endfor
+   </div>
    <footer class="row" style="height: 2.5rem;">
 
    </footer>
-   <form style="display:none;" action="{{url('resultaat')}}" method="post">
+   <form target="_blank" style="display:none;" action="{{url('resultaat')}}" method="post">
       @csrf
       @foreach($alleVragen as $vraag)
          @if( $data == null)

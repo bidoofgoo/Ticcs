@@ -10,7 +10,7 @@
 <body>
    <header style="display: flex; justify-content: space-between;">
       <h2>Heb ik lyme? Resultaten lijst.</h2>
-      <a onclick="window.print()" style="vertical-align: middle;">Print resultaten</a>
+      <a onclick="window.print()" style="vertical-align: middle; cursor:pointer;">Print resultaten</a>
    </header>
    <main>
       <h3>Informatie</h3>

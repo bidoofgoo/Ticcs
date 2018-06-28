@@ -1,4 +1,4 @@
-* {
+.col-lg-9 {
   margin: 0 auto;
 }
 h2{
@@ -20,18 +20,20 @@ body{
   box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.5);
   text-align: center;
 }
+
 h3{
   font-size: 1rem !important;
   font-style: italic;
   padding: 1rem;
   margin: 0 !important;
 }
+
 .klaarknop{
   position: fixed;
   z-index: 999;
   bottom: 5%;
   right: 3%;
-  width: 5rem;
+  width: 10rem;
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   text-align: center;
@@ -43,6 +45,7 @@ h3{
   color: white;
   transition: 0.3s
 }
+
 .klaarknop:hover{
   color: white;
   text-decoration: none;

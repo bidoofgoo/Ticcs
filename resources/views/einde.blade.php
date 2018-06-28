@@ -8,7 +8,8 @@
 @section('content')
 <main class="flex flexcenter flexmiddle fillings">
   <div class="boop">
-    <h1 class="title">U heeft de lijst ingevult, goed gedaan :)</h1>
+    <h1 >De vragenlijst is geopend op een nieuwe pagina.</h1>
+    <h1 style="margin-bottom: 2rem;">Wij hopen dat we ondersteuning hebben kunnen bieden bij uw problemen.</h1>
     <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem; padding: 1rem; width: 20rem;"> Doe de test opnieuw </a>
   </div>
 </main>
