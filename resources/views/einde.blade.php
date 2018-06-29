@@ -10,7 +10,7 @@
   <div class="boop">
     <h1 >De resultaten zijn geopend in een nieuw tabblad.</h1>
     <h1 style="margin-bottom: 2rem;">Wij hopen dat we ondersteuning hebben kunnen bieden bij uw problemen.</h1>
-    <a class="button" href="{{url('vragenlijst/1')}}" style="font-size: 2rem; padding: 1rem; width: 20rem;"> Doe de test opnieuw </a>
+    <a class="button" href="{{url('/')}}" style="font-size: 1.5rem; padding: 1rem; width: 20rem;">Terug naar home</a>
   </div>
 </main>
 @endsection
