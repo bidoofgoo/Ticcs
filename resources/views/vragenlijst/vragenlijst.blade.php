@@ -32,7 +32,7 @@
    </div>
 
    <div class="popup">
-      <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de klaar knop. </h3>
+      <h3>Klik op de symptomen die u heeft. Als u klaar bent, klikt u op de 'Zie resultaten' knop. </h3>
    </div>
 
    <a class="klaarknop" href="{{url('einde')}}" onclick="
@@ -50,12 +50,15 @@
             @foreach($vragen as $vraag)
             <div class="col-md-4 vraag" data-vraagno="{{$vraagno + 4}}"
             style="background-image: url('{{ asset('public/img/icons/' . $vraag->afbeelding_link) }}');">
-               <h2>{{$vraag->vraag}} <a class="information2"
-                  onclick="event.preventDefault();
-                           event.stopPropagation();
-                          document.getElementsByClassName('⬛')[0].style.display = 'flex';
-                          document.getElementsByClassName('🍆')[0].src = '{{$vraag->info_link}}';"
-                  href="{{$vraag->info_link}}" style="vertical-align:top;">i</a></h2>
+              <div style="display:flex;">
+                <h2>{{$vraag->vraag}}</h2>
+                <a class="information2"
+                    onclick="event.preventDefault();
+                             event.stopPropagation();
+                            document.getElementsByClassName('⬛')[0].style.display = 'flex';
+                            document.getElementsByClassName('🍆')[0].src = '{{$vraag->info_link}}';"
+                    href="{{$vraag->info_link}}" style="vertical-align:top;">i</a>
+              </div>
             </div>
             @if($vraagno % 3 == 3 - 1 && $vraagno != 0 && !$loop->last )
          </div>

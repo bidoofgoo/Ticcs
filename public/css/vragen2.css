@@ -73,10 +73,14 @@ h3{
     /* background-color: #F57C00 !important; */
 }
 .col-md-4 h2{
+  display: block;
   position: relative;
   bottom: 2rem;
   text-align: center;
-  width: 90%;
+  padding: 0 1rem;
+  width: calc(100% - 4rem);
+  box-sizing: content-box;
+  word-wrap:break-word;
 
 }
 
@@ -116,6 +120,12 @@ h3{
 
 .vraag a{
    color: white;
+   position: relative;
+   display: block;
+   top: 2rem;
+   box-sizing: content-box;
+   min-width: 20px;
+   min-height: 20px;
 }
 
 .vraag a:hover{
@@ -164,4 +174,10 @@ h3{
 
 .clicked1:hover, .clicked2:hover, .clicked3:hover, .clicked4:hover{
    background-color: #D68733;
+}
+
+@media screen and (max-width: 767px){
+  .vraag a{
+    margin-right: 2rem;
+  }
 }
